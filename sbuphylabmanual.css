@@ -1,63 +1,243 @@
-<!DOCTYPE html>
-<html><head><link rel="stylesheet" href="https://s.brightspace.com/lib/fonts/0.6.1/fonts.css"></head><body style="color: rgb(32, 33, 34); font-family: Lato, sans-serif;"><p>* {<br>&nbsp; &nbsp; margin: 0px 0px 0px 0px;<br>&nbsp; &nbsp; padding: 0px 0px 0px 0px;<br>}</p>
-<p>body, html {<br>&nbsp; &nbsp; padding: 3px 3px 3px 3px;</p>
-<p>&nbsp; &nbsp; background-color: #D8DBE2;</p>
-<p>&nbsp; &nbsp; font-family: Verdana, sans-serif;<br>&nbsp; &nbsp; font-size: 11pt;<br>&nbsp; &nbsp; text-align: center;<br>}</p>
-<p>div.main_page {<br>&nbsp; &nbsp; position: relative;<br>&nbsp; &nbsp; display: table;</p>
-<p>&nbsp; &nbsp; width: 1000px;</p>
-<p>&nbsp; &nbsp; margin-bottom: 3px;<br>&nbsp; &nbsp; margin-left: auto;<br>&nbsp; &nbsp; margin-right: auto;<br>&nbsp; &nbsp; padding: 0px 0px 0px 0px;</p>
-<p>&nbsp; &nbsp; border-width: 2px;<br>&nbsp; &nbsp; border-color: #212738;<br>&nbsp; &nbsp; border-style: solid;</p>
-<p>&nbsp; &nbsp; background-color: #FFFFFF;</p>
-<p>&nbsp; &nbsp; text-align: center;<br>}</p>
-<p>div.page_header {<br>&nbsp; &nbsp; height: 75px;<br>&nbsp; &nbsp; width: 100%;</p>
-<p>&nbsp; &nbsp; background-color: #F5F6F7;<br>}</p>
-<p>div.page_header span {<br>&nbsp; &nbsp; margin: 15px 0px 0px 50px;</p>
-<p>&nbsp; &nbsp; font-size: 180%;<br>&nbsp; &nbsp; font-weight: bold;<br>}</p>
-<p>div.page_header img {<br>&nbsp; &nbsp; margin: 3px 0px 0px 40px;</p>
-<p>&nbsp; &nbsp; border: 0px 0px 0px;<br>}</p>
-<p>div.table_of_contents {<br>&nbsp; &nbsp; clear: left;</p>
-<p>&nbsp; &nbsp; min-width: 200px;</p>
-<p>&nbsp; &nbsp; margin: 3px 3px 3px 3px;</p>
-<p>&nbsp; &nbsp; background-color: #FFFFFF;</p>
-<p>&nbsp; &nbsp; text-align: left;<br>}</p>
-<p>div.table_of_contents_item {<br>&nbsp; &nbsp; clear: left;</p>
-<p>&nbsp; &nbsp; width: 100%;</p>
-<p>&nbsp; &nbsp; margin: 4px 0px 0px 0px;</p>
-<p>&nbsp; &nbsp; background-color: #FFFFFF;</p>
-<p>&nbsp; &nbsp; color: #000000;<br>&nbsp; &nbsp; text-align: left;<br>}</p>
-<p>div.table_of_contents_item a {<br>&nbsp; &nbsp; margin: 6px 0px 0px 6px;<br>}</p>
-<p>div.content_section {<br>&nbsp; &nbsp; margin: 3px 3px 3px 3px;</p>
-<p>&nbsp; &nbsp; background-color: #FFFFFF;</p>
-<p>&nbsp; &nbsp; text-align: left;<br>}</p>
-<p>div.content_section_text {<br>&nbsp; &nbsp; padding: 4px 8px 4px 8px;</p>
-<p>&nbsp; &nbsp; color: #000000;<br>&nbsp; &nbsp; font-size: 100%;<br>}</p>
-<p>div.content_section_text pre {<br>&nbsp; &nbsp; margin: 8px 0px 8px 0px;<br>&nbsp; &nbsp; padding: 8px 8px 8px 8px;</p>
-<p>&nbsp; &nbsp; border-width: 1px;<br>&nbsp; &nbsp; border-style: dotted;<br>&nbsp; &nbsp; border-color: #000000;</p>
-<p>&nbsp; &nbsp; background-color: #F5F6F7;</p>
-<p>&nbsp; &nbsp; font-style: italic;<br>}</p>
-<p>div.content_section_text p {<br>&nbsp; &nbsp; margin-bottom: 6px;<br>}</p>
-<p>div.content_section_text ul, div.content_section_text li,<br>div.content_section_text ol, div.content_section_text li &nbsp;{<br>&nbsp; &nbsp; padding: 4px 8px 4px 20px;<br>}</p>
-<p>div.section_header {<br>&nbsp; &nbsp; padding: 3px 6px 3px 6px;</p>
-<p>&nbsp; &nbsp; background-color: #8E9CB2;</p>
-<p>&nbsp; &nbsp; color: #FFFFFF;<br>&nbsp; &nbsp; font-weight: bold;<br>&nbsp; &nbsp; font-size: 112%;<br>&nbsp; &nbsp; text-align: center;<br>}</p>
-<p>div.section_header_red {<br>&nbsp; &nbsp; background-color: #CD214F;<br>}</p>
-<p>div.section_header_grey {<br>&nbsp; &nbsp; background-color: #9F9386;<br>}</p>
-<p>.floating_element {<br>&nbsp; &nbsp; position: relative;<br>&nbsp; &nbsp; float: left;<br>}</p>
-<p>figure {<br>&nbsp; display: block;<br>&nbsp; margin-top: 1em;<br>&nbsp; margin-bottom: 1em;<br>&nbsp; margin-left: &nbsp;40px;<br>&nbsp; margin-right: 40px;<br>}</p>
-<p>div.table_of_contents_item a,<br>div.content_section_text a {<br>&nbsp; &nbsp; text-decoration: none;<br>&nbsp; &nbsp; font-weight: bold;<br>}</p>
-<p>div.table_of_contents_item a:link,<br>div.table_of_contents_item a:visited,<br>div.table_of_contents_item a:active {<br>&nbsp; &nbsp; color: #000000;<br>}</p>
-<p>div.table_of_contents_item a:hover {<br>&nbsp; &nbsp; background-color: #000000;</p>
-<p>&nbsp; &nbsp; color: #FFFFFF;<br>}</p>
-<p>div.content_section_text a:not(.gfn):not(.bfn):not(.yfn):link,<br>div.content_section_text a:not(.gfn):not(.bfn):not(.yfn):visited,<br>div.content_section_text a:not(.gfn):not(.bfn):not(.yfn):active {<br>&nbsp; &nbsp; background-color: #DCDFE6;</p>
-<p>&nbsp; &nbsp; color: #000000;<br>}</p>
-<p>div.content_section_text a:not(.gfn):not(.bfn):not(.yfn):hover {<br>&nbsp; &nbsp; background-color: #000000;</p>
-<p>&nbsp; &nbsp; color: #DCDFE6;<br>}</p>
-<p>div.validator {<br>}</p>
-<p>div.footnotes, .blongfootnote,.ylongfootnote {<br>&nbsp; &nbsp; display: none;<br>}</p>
-<p>/*All footnote information*/<br>a.gfn, a.bfn, a.yfn {<br>&nbsp; &nbsp; border-radius: 0.9em;<br>&nbsp; &nbsp; color: #000000;<br>}</p>
-<p>a.gfn:before, a.gfn:after,<br>a.bfn:before, a.bfn:after,<br>a.yfn:before, a.yfn:after {<br>&nbsp; &nbsp; content: " ";<br>&nbsp; &nbsp; white-space: pre;<br>}</p>
-<p>a.gfn {<br>&nbsp; &nbsp; background-color: #C1C1C1;<br>}<br>a.bfn {<br>&nbsp; &nbsp; background-color: #85BBF8;<br>}<br>a.yfn {<br>&nbsp; &nbsp; background-color: #F7EC44;<br>}</p>
-<p>.blongfootnote, .blfn {<br>&nbsp; &nbsp; background-color: #B7D7FA;<br>}</p>
-<p>.ylongfootnote, .ylfn {<br>&nbsp; &nbsp; background-color: #F9EF6C;<br>}</p>
-<p>.ylongfootnote, .blongfootnote, .ylfn, .blfn {<br>&nbsp; &nbsp; padding-left: 10px;<br>&nbsp; &nbsp; padding-right: 10px;<br>&nbsp; &nbsp; padding-top: 3px;<br>&nbsp; &nbsp; padding-bottom: 3px;<br>&nbsp; &nbsp; margin-bottom: 8px;<br>}</p>
-<p>table.simpletable, table.simpletable th, table.simpletable td {<br>&nbsp; &nbsp; border: 1px solid black;<br>&nbsp; &nbsp; border-collapse: collapse;<br>&nbsp; &nbsp; padding: 2px;<br>&nbsp; &nbsp; text-align: center;<br>}<br>&nbsp;&nbsp;<br>img.displayed {<br>&nbsp; &nbsp; display: block;<br>&nbsp; &nbsp; margin-left: auto;<br>&nbsp; &nbsp; margin-right: auto<br>}</p></body></html>
+* {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+body, html {
+	padding: 3px 3px 3px 3px;
+
+	background-color: #D8DBE2;
+
+	font-family: Verdana, sans-serif;
+	font-size: 11pt;
+	text-align: center;
+}
+
+div.main_page {
+	position: relative;
+	display: table;
+
+	width: 1000px;
+
+	margin-bottom: 3px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px 0px 0px 0px;
+
+	border-width: 2px;
+	border-color: #212738;
+	border-style: solid;
+
+	background-color: #FFFFFF;
+
+	text-align: center;
+}
+
+div.page_header {
+	height: 75px;
+	width: 100%;
+
+	background-color: #F5F6F7;
+}
+
+div.page_header span {
+	margin: 15px 0px 0px 50px;
+
+	font-size: 180%;
+	font-weight: bold;
+}
+
+div.page_header img {
+	margin: 3px 0px 0px 40px;
+
+	border: 0px 0px 0px;
+}
+
+div.table_of_contents {
+	clear: left;
+
+	min-width: 200px;
+
+	margin: 3px 3px 3px 3px;
+
+	background-color: #FFFFFF;
+
+	text-align: left;
+}
+
+div.table_of_contents_item {
+	clear: left;
+
+	width: 100%;
+
+	margin: 4px 0px 0px 0px;
+
+	background-color: #FFFFFF;
+
+	color: #000000;
+	text-align: left;
+}
+
+div.table_of_contents_item a {
+	margin: 6px 0px 0px 6px;
+}
+
+div.content_section {
+	margin: 3px 3px 3px 3px;
+
+	background-color: #FFFFFF;
+
+	text-align: left;
+}
+
+div.content_section_text {
+	padding: 4px 8px 4px 8px;
+
+	color: #000000;
+	font-size: 100%;
+}
+
+div.content_section_text pre {
+	margin: 8px 0px 8px 0px;
+	padding: 8px 8px 8px 8px;
+
+	border-width: 1px;
+	border-style: dotted;
+	border-color: #000000;
+
+	background-color: #F5F6F7;
+
+	font-style: italic;
+}
+
+div.content_section_text p {
+	margin-bottom: 6px;
+}
+
+div.content_section_text ul, div.content_section_text li,
+div.content_section_text ol, div.content_section_text li  {
+	padding: 4px 8px 4px 20px;
+}
+
+div.section_header {
+	padding: 3px 6px 3px 6px;
+
+	background-color: #8E9CB2;
+
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 112%;
+	text-align: center;
+}
+
+div.section_header_red {
+	background-color: #CD214F;
+}
+
+div.section_header_grey {
+	background-color: #9F9386;
+}
+
+.floating_element {
+	position: relative;
+	float: left;
+}
+
+figure {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left:  40px;
+  margin-right: 40px;
+}
+
+div.table_of_contents_item a,
+div.content_section_text a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+div.table_of_contents_item a:link,
+div.table_of_contents_item a:visited,
+div.table_of_contents_item a:active {
+	color: #000000;
+}
+
+div.table_of_contents_item a:hover {
+	background-color: #000000;
+
+	color: #FFFFFF;
+}
+
+div.content_section_text a:not(.gfn):not(.bfn):not(.yfn):link,
+div.content_section_text a:not(.gfn):not(.bfn):not(.yfn):visited,
+div.content_section_text a:not(.gfn):not(.bfn):not(.yfn):active {
+	background-color: #DCDFE6;
+
+	color: #000000;
+}
+
+div.content_section_text a:not(.gfn):not(.bfn):not(.yfn):hover {
+	background-color: #000000;
+
+	color: #DCDFE6;
+}
+
+div.validator {
+}
+
+div.footnotes, .blongfootnote,.ylongfootnote {
+	display: none;
+}
+
+/*All footnote information*/
+a.gfn, a.bfn, a.yfn {
+	border-radius: 0.9em;
+	color: #000000;
+}
+
+a.gfn:before, a.gfn:after,
+a.bfn:before, a.bfn:after,
+a.yfn:before, a.yfn:after {
+	content: " ";
+	white-space: pre;
+}
+
+a.gfn {
+	background-color: #C1C1C1;
+}
+a.bfn {
+	background-color: #85BBF8;
+}
+a.yfn {
+	background-color: #F7EC44;
+}
+
+.blongfootnote, .blfn {
+	background-color: #B7D7FA;
+}
+
+.ylongfootnote, .ylfn {
+	background-color: #F9EF6C;
+}
+
+.ylongfootnote, .blongfootnote, .ylfn, .blfn {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin-bottom: 8px;
+}
+
+table.simpletable, table.simpletable th, table.simpletable td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 2px;
+	text-align: center;
+}
+  
+img.displayed {
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
