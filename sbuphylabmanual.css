@@ -1,6 +1,7 @@
-<style>
-/* --- Customized CSS for Brightspace --- */
-.brightspace-container {
+/* --- SBU Intro Physics Labs Master Stylesheet --- */
+
+/* Replaced html/body to prevent ruining the Brightspace UI wrapper framework */
+.main_page_container {
     padding: 3px;
     background-color: #D8DBE2;
     font-family: Verdana, sans-serif;
@@ -16,22 +17,27 @@ div.main_page {
     margin-left: auto;
     margin-right: auto;
     padding: 0px;
-    border: 2px solid #212738;
+    border-width: 2px;
+    border-color: #212738;
+    border-style: solid;
     background-color: #FFFFFF;
     text-align: center;
+    box-sizing: border-box;
 }
 
 div.page_header {
     height: 75px;
     width: 100%;
     background-color: #F5F6F7;
+    display: flex;
+    align-items: center;
 }
 
 div.page_header span {
-    margin: 15px 0px 0px 50px;
+    margin: 0px 0px 0px 50px;
     font-size: 180%;
     font-weight: bold;
-    display: inline-block;
+    color: #000000;
 }
 
 div.page_header img {
@@ -88,9 +94,12 @@ div.content_section_text {
 div.content_section_text pre {
     margin: 8px 0px;
     padding: 8px;
-    border: 1px dotted #000000;
+    border-width: 1px;
+    border-style: dotted;
+    border-color: #000000;
     background-color: #F5F6F7;
     font-style: italic;
+    white-space: pre-wrap;
 }
 
 div.content_section_text p {
@@ -129,27 +138,62 @@ div.section_header {
     text-align: center;
 }
 
-div.section_header_red { background-color: #CD214F; }
-div.section_header_grey { background-color: #9F9386; }
-.floating_element { position: relative; float: left; }
+div.section_header_red {
+    background-color: #CD214F;
+}
+
+div.section_header_grey {
+    background-color: #9F9386;
+}
+
+.floating_element {
+    position: relative;
+    float: left;
+}
 
 figure {
     display: block;
-    margin: 1em 40px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
-div.footnotes, .blongfootnote, .ylongfootnote { display: none; }
+div.validator {
+}
 
-/* Footnotes */
-a.gfn, a.bfn, a.yfn { border-radius: 0.9em; color: #000000; }
-a.gfn:before, a.gfn:after, a.bfn:before, a.bfn:after, a.yfn:before, a.yfn:after { content: " "; white-space: pre; }
+div.footnotes, .blongfootnote, .ylongfootnote {
+    display: none;
+}
+
+/* --- Footnote System Styling --- */
+a.gfn, a.bfn, a.yfn {
+    border-radius: 0.9em;
+    color: #000000;
+    padding: 0 5px;
+}
+
+a.gfn:before, a.gfn:after, a.bfn:before, a.bfn:after, a.yfn:before, a.yfn:after {
+    content: " ";
+    white-space: pre;
+}
+
 a.gfn { background-color: #C1C1C1; }
 a.bfn { background-color: #85BBF8; }
 a.yfn { background-color: #F7EC44; }
+
 .blongfootnote, .blfn { background-color: #B7D7FA; }
 .ylongfootnote, .ylfn { background-color: #F9EF6C; }
-.ylongfootnote, .blongfootnote, .ylfn, .blfn { padding: 3px 10px; margin-bottom: 8px; }
 
+.ylongfootnote, .blongfootnote, .ylfn, .blfn {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-bottom: 8px;
+}
+
+/* --- Tables & Data Layouts --- */
 table.simpletable, table.simpletable th, table.simpletable td {
     border: 1px solid black;
     border-collapse: collapse;
@@ -162,31 +206,3 @@ img.displayed {
     margin-left: auto;
     margin-right: auto;
 }
-</style>
-
-<!-- --- HTML Layout Wrapper --- -->
-<div class="brightspace-container">
-    <div class="main_page">
-        
-        <div class="page_header">
-            <span>Page Title Here</span>
-        </div>
-        
-        <div class="table_of_contents">
-            <div class="table_of_contents_item">
-                <a href="#section1">Link to Section 1</a>
-            </div>
-        </div>
-        
-        <div class="section_header">
-            Section Title
-        </div>
-        
-        <div class="content_section">
-            <div class="content_section_text">
-                <p>Your main course content goes here...</p>
-            </div>
-        </div>
-        
-    </div>
-</div>
