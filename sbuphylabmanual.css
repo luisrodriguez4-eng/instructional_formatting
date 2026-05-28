@@ -1,243 +1,192 @@
-* {
-	margin: 0px 0px 0px 0px;
-	padding: 0px 0px 0px 0px;
-}
-
-body, html {
-	padding: 3px 3px 3px 3px;
-
-	background-color: #D8DBE2;
-
-	font-family: Verdana, sans-serif;
-	font-size: 11pt;
-	text-align: center;
+<style>
+/* --- Customized CSS for Brightspace --- */
+.brightspace-container {
+    padding: 3px;
+    background-color: #D8DBE2;
+    font-family: Verdana, sans-serif;
+    font-size: 11pt;
+    text-align: center;
 }
 
 div.main_page {
-	position: relative;
-	display: table;
-
-	width: 1000px;
-
-	margin-bottom: 3px;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0px 0px 0px 0px;
-
-	border-width: 2px;
-	border-color: #212738;
-	border-style: solid;
-
-	background-color: #FFFFFF;
-
-	text-align: center;
+    position: relative;
+    display: table;
+    width: 1000px;
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    border: 2px solid #212738;
+    background-color: #FFFFFF;
+    text-align: center;
 }
 
 div.page_header {
-	height: 75px;
-	width: 100%;
-
-	background-color: #F5F6F7;
+    height: 75px;
+    width: 100%;
+    background-color: #F5F6F7;
 }
 
 div.page_header span {
-	margin: 15px 0px 0px 50px;
-
-	font-size: 180%;
-	font-weight: bold;
+    margin: 15px 0px 0px 50px;
+    font-size: 180%;
+    font-weight: bold;
+    display: inline-block;
 }
 
 div.page_header img {
-	margin: 3px 0px 0px 40px;
-
-	border: 0px 0px 0px;
+    margin: 3px 0px 0px 40px;
+    border: 0px;
 }
 
 div.table_of_contents {
-	clear: left;
-
-	min-width: 200px;
-
-	margin: 3px 3px 3px 3px;
-
-	background-color: #FFFFFF;
-
-	text-align: left;
+    clear: left;
+    min-width: 200px;
+    margin: 3px;
+    background-color: #FFFFFF;
+    text-align: left;
 }
 
 div.table_of_contents_item {
-	clear: left;
-
-	width: 100%;
-
-	margin: 4px 0px 0px 0px;
-
-	background-color: #FFFFFF;
-
-	color: #000000;
-	text-align: left;
+    clear: left;
+    width: 100%;
+    margin: 4px 0px 0px 0px;
+    background-color: #FFFFFF;
+    color: #000000;
+    text-align: left;
 }
 
 div.table_of_contents_item a {
-	margin: 6px 0px 0px 6px;
+    margin: 6px 0px 0px 6px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-div.content_section {
-	margin: 3px 3px 3px 3px;
-
-	background-color: #FFFFFF;
-
-	text-align: left;
-}
-
-div.content_section_text {
-	padding: 4px 8px 4px 8px;
-
-	color: #000000;
-	font-size: 100%;
-}
-
-div.content_section_text pre {
-	margin: 8px 0px 8px 0px;
-	padding: 8px 8px 8px 8px;
-
-	border-width: 1px;
-	border-style: dotted;
-	border-color: #000000;
-
-	background-color: #F5F6F7;
-
-	font-style: italic;
-}
-
-div.content_section_text p {
-	margin-bottom: 6px;
-}
-
-div.content_section_text ul, div.content_section_text li,
-div.content_section_text ol, div.content_section_text li  {
-	padding: 4px 8px 4px 20px;
-}
-
-div.section_header {
-	padding: 3px 6px 3px 6px;
-
-	background-color: #8E9CB2;
-
-	color: #FFFFFF;
-	font-weight: bold;
-	font-size: 112%;
-	text-align: center;
-}
-
-div.section_header_red {
-	background-color: #CD214F;
-}
-
-div.section_header_grey {
-	background-color: #9F9386;
-}
-
-.floating_element {
-	position: relative;
-	float: left;
-}
-
-figure {
-  display: block;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left:  40px;
-  margin-right: 40px;
-}
-
-div.table_of_contents_item a,
-div.content_section_text a {
-	text-decoration: none;
-	font-weight: bold;
-}
-
-div.table_of_contents_item a:link,
-div.table_of_contents_item a:visited,
+div.table_of_contents_item a:link, 
+div.table_of_contents_item a:visited, 
 div.table_of_contents_item a:active {
-	color: #000000;
+    color: #000000;
 }
 
 div.table_of_contents_item a:hover {
-	background-color: #000000;
-
-	color: #FFFFFF;
+    background-color: #000000;
+    color: #FFFFFF;
 }
 
-div.content_section_text a:not(.gfn):not(.bfn):not(.yfn):link,
-div.content_section_text a:not(.gfn):not(.bfn):not(.yfn):visited,
-div.content_section_text a:not(.gfn):not(.bfn):not(.yfn):active {
-	background-color: #DCDFE6;
+div.content_section {
+    margin: 3px;
+    background-color: #FFFFFF;
+    text-align: left;
+}
 
-	color: #000000;
+div.content_section_text {
+    padding: 4px 8px;
+    color: #000000;
+    font-size: 100%;
+}
+
+div.content_section_text pre {
+    margin: 8px 0px;
+    padding: 8px;
+    border: 1px dotted #000000;
+    background-color: #F5F6F7;
+    font-style: italic;
+}
+
+div.content_section_text p {
+    margin-bottom: 6px;
+}
+
+div.content_section_text ul, 
+div.content_section_text li, 
+div.content_section_text ol {
+    padding: 4px 8px 4px 20px;
+}
+
+div.content_section_text a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+div.content_section_text a:not(.gfn):not(.bfn):not(.yfn):link, 
+div.content_section_text a:not(.gfn):not(.bfn):not(.yfn):visited, 
+div.content_section_text a:not(.gfn):not(.bfn):not(.yfn):active {
+    background-color: #DCDFE6;
+    color: #000000;
 }
 
 div.content_section_text a:not(.gfn):not(.bfn):not(.yfn):hover {
-	background-color: #000000;
-
-	color: #DCDFE6;
+    background-color: #000000;
+    color: #DCDFE6;
 }
 
-div.validator {
+div.section_header {
+    padding: 3px 6px;
+    background-color: #8E9CB2;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 112%;
+    text-align: center;
 }
 
-div.footnotes, .blongfootnote,.ylongfootnote {
-	display: none;
+div.section_header_red { background-color: #CD214F; }
+div.section_header_grey { background-color: #9F9386; }
+.floating_element { position: relative; float: left; }
+
+figure {
+    display: block;
+    margin: 1em 40px;
 }
 
-/*All footnote information*/
-a.gfn, a.bfn, a.yfn {
-	border-radius: 0.9em;
-	color: #000000;
-}
+div.footnotes, .blongfootnote, .ylongfootnote { display: none; }
 
-a.gfn:before, a.gfn:after,
-a.bfn:before, a.bfn:after,
-a.yfn:before, a.yfn:after {
-	content: " ";
-	white-space: pre;
-}
-
-a.gfn {
-	background-color: #C1C1C1;
-}
-a.bfn {
-	background-color: #85BBF8;
-}
-a.yfn {
-	background-color: #F7EC44;
-}
-
-.blongfootnote, .blfn {
-	background-color: #B7D7FA;
-}
-
-.ylongfootnote, .ylfn {
-	background-color: #F9EF6C;
-}
-
-.ylongfootnote, .blongfootnote, .ylfn, .blfn {
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 3px;
-	padding-bottom: 3px;
-	margin-bottom: 8px;
-}
+/* Footnotes */
+a.gfn, a.bfn, a.yfn { border-radius: 0.9em; color: #000000; }
+a.gfn:before, a.gfn:after, a.bfn:before, a.bfn:after, a.yfn:before, a.yfn:after { content: " "; white-space: pre; }
+a.gfn { background-color: #C1C1C1; }
+a.bfn { background-color: #85BBF8; }
+a.yfn { background-color: #F7EC44; }
+.blongfootnote, .blfn { background-color: #B7D7FA; }
+.ylongfootnote, .ylfn { background-color: #F9EF6C; }
+.ylongfootnote, .blongfootnote, .ylfn, .blfn { padding: 3px 10px; margin-bottom: 8px; }
 
 table.simpletable, table.simpletable th, table.simpletable td {
-	border: 1px solid black;
-	border-collapse: collapse;
-	padding: 2px;
-	text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 2px;
+    text-align: center;
 }
-  
+
 img.displayed {
-	display: block;
-	margin-left: auto;
-	margin-right: auto
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+</style>
+
+<!-- --- HTML Layout Wrapper --- -->
+<div class="brightspace-container">
+    <div class="main_page">
+        
+        <div class="page_header">
+            <span>Page Title Here</span>
+        </div>
+        
+        <div class="table_of_contents">
+            <div class="table_of_contents_item">
+                <a href="#section1">Link to Section 1</a>
+            </div>
+        </div>
+        
+        <div class="section_header">
+            Section Title
+        </div>
+        
+        <div class="content_section">
+            <div class="content_section_text">
+                <p>Your main course content goes here...</p>
+            </div>
+        </div>
+        
+    </div>
+</div>
